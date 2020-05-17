@@ -1,9 +1,9 @@
-import FluentSQLite
+import FluentPostgreSQL
 import Vapor
 
 /// A single entry of a Todo list.
-final class Todo: SQLiteModel {
-    typealias Database = SQLiteDatabase
+final class Todo: PostgreSQLModel {
+    typealias Database = PostgreSQLDatabase
     /// The unique identifier for this `Todo`.
     var id: Int?
 
